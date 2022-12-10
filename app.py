@@ -24,6 +24,9 @@ from Features.Picture.picture import click_pic
 from Features.Covid.covid import covid_cases
 from Features.Internet_speed.internet_speed import speed_test
 from Features.Day.day import tellDay
+from Features.Google.open_google import open_google
+from Features.Youtube.open_youtube import open_youtube
+from Features.Wikipedia.Wikipedia_search import wikipedia_search
 
 if __name__ == "__main__":
     # greet()
@@ -31,23 +34,14 @@ if __name__ == "__main__":
     if 1:
         query = recognze().lower()
 
-        if 'wikipedia' in query:
-            speak('Searching Wikipedia...')
-            query = query.replace("wikipedia", "")
-            results = wikipedia.summary(query, sentences=2)
-            speak("According to Wikipedia")
-            print(results)
-            speak(results)
+        if 'from wikipedia' in query:
+            wikipedia_search(query)
 
         elif 'youtube' in query:
-            speak("Opening Youtube")
-            print(f"Magic : Opening Youtube\n")
-            webbrowser.open("youtube.com")
+            open_youtube()
 
         elif 'google' in query:
-            speak("Opening Google")
-            print(f"Magic : Opening Google\n")
-            webbrowser.open("google.com")
+            open_google()
         
         elif 'screenshot' in query:
             take_screenshot(1)
