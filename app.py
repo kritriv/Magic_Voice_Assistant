@@ -17,6 +17,7 @@ from Services.Recognition.recognition import recognze
 from Features.Screenshot.screenshot import take_screenshot
 from Features.Jokes.jokes import tell_me_joke
 from Features.Date_time.date_time import date , time
+from Features.Video_download.video_download import download_yt_video
 
 # greet()
 # recognze()
@@ -56,4 +57,7 @@ if __name__ == "__main__":
 
         elif 'time' in query:
             time()
+
+        elif 'download video' in query:
+            download_yt_video(1)
             
