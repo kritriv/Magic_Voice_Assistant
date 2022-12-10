@@ -20,6 +20,7 @@ from Features.Date_time.date_time import date , time
 from Features.Video_download.video_download import download_yt_video
 from Features.News.news import news, show_me_some_tech_news, show_me_some_tech_videos
 from Features.Games.game import play_games
+from Features.Picture.picture import click_pic
 # greet()
 # recognze()
 
@@ -73,4 +74,7 @@ if __name__ == "__main__":
 
         elif 'game' in query:
             play_games(1)
+
+        elif 'picture' in query or 'photo' in query:
+            click_pic(1)
             
