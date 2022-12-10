@@ -15,7 +15,7 @@ from Services.Recognition.recognition import recognze
 
 # ========= Features Module Import =====
 from Features.Screenshot.screenshot import take_screenshot
-# from features.games import games
+from Features.Jokes.jokes import tell_me_joke
 
 # greet()
 # recognze()
@@ -46,4 +46,7 @@ if __name__ == "__main__":
         
         elif 'screenshot' in query:
             take_screenshot(1)
+
+        elif 'joke' in query:
+            tell_me_joke()
             
