@@ -23,9 +23,7 @@ from Features.Games.game import play_games
 from Features.Picture.picture import click_pic
 from Features.Covid.covid import covid_cases
 from Features.Internet_speed.internet_speed import speed_test
-
-# greet()
-# recognze()
+from Features.Day.day import tellDay
 
 if __name__ == "__main__":
     # greet()
@@ -86,4 +84,7 @@ if __name__ == "__main__":
         
         elif 'internet speed' in query or 'internet speed check' in query :
             speed_test(1)
+
+        elif 'day' in query  in query :
+            tellDay()
             
