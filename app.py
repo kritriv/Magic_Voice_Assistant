@@ -22,6 +22,7 @@ from Features.News.news import news, show_me_some_tech_news, show_me_some_tech_v
 from Features.Games.game import play_games
 from Features.Picture.picture import click_pic
 from Features.Covid.covid import covid_cases
+from Features.Internet_speed.internet_speed import speed_test
 
 # greet()
 # recognze()
@@ -82,4 +83,7 @@ if __name__ == "__main__":
         
         elif 'covid' in query :
             covid_cases(query)
+        
+        elif 'internet speed' in query or 'internet speed check' in query :
+            speed_test(1)
             
