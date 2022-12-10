@@ -16,6 +16,7 @@ from Services.Recognition.recognition import recognze
 # ========= Features Module Import =====
 from Features.Screenshot.screenshot import take_screenshot
 from Features.Jokes.jokes import tell_me_joke
+from Features.Date_time.date_time import date , time
 
 # greet()
 # recognze()
@@ -49,4 +50,10 @@ if __name__ == "__main__":
 
         elif 'joke' in query:
             tell_me_joke()
+        
+        elif 'date' in query:
+            date()
+
+        elif 'time' in query:
+            time()
             
