@@ -18,6 +18,7 @@ from Features.Screenshot.screenshot import take_screenshot
 from Features.Jokes.jokes import tell_me_joke
 from Features.Date_time.date_time import date , time
 from Features.Video_download.video_download import download_yt_video
+from Features.News.news import news, show_me_some_tech_news, show_me_some_tech_videos
 
 # greet()
 # recognze()
@@ -60,4 +61,13 @@ if __name__ == "__main__":
 
         elif 'download video' in query:
             download_yt_video(1)
+
+        elif 'tell me a news' in query:
+            speak(news())
+
+        elif 'tech news' in query:
+            show_me_some_tech_news()
+
+        elif 'tech video' in query:
+            show_me_some_tech_videos()
             
