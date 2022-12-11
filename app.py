@@ -16,7 +16,7 @@ from Services.Recognition.recognition import recognze
 # ========= Features Module Import =====
 from Features.Screenshot.screenshot import take_screenshot
 from Features.Jokes.jokes import tell_me_joke
-from Features.Date_time.date_time import date , time
+from Features.Date_time.date_time import date, time
 from Features.Video_download.video_download import download_yt_video
 from Features.News.news import news, show_me_some_tech_news, show_me_some_tech_videos
 from Features.Games.game import play_games
@@ -30,55 +30,62 @@ from Features.Wikipedia.Wikipedia_search import wikipedia_search
 
 if __name__ == "__main__":
     # greet()
-    # while True:
-    if 1:
-        query = recognze().lower()
+    while True:
+        if 1:
+            query = recognze().lower()
 
-        if 'from wikipedia' in query:
-            wikipedia_search(query)
+            if 'your name' in query:
+                print(f"Magic : I am Magic. Your Personal Assistant\n")
+                speak("I am Magic. Your Personal Assistant")
 
-        elif 'youtube' in query:
-            open_youtube()
+            elif 'from wikipedia' in query:
+                wikipedia_search(query)
 
-        elif 'google' in query:
-            open_google()
-        
-        elif 'screenshot' in query:
-            take_screenshot(1)
+            elif 'youtube' in query:
+                open_youtube()
 
-        elif 'joke' in query:
-            tell_me_joke()
-        
-        elif 'date' in query:
-            date()
+            elif 'google' in query:
+                open_google()
 
-        elif 'time' in query:
-            time()
+            elif 'screenshot' in query:
+                take_screenshot(1)
 
-        elif 'download video' in query:
-            download_yt_video(1)
+            elif 'joke' in query:
+                tell_me_joke()
 
-        elif 'tell me a news' in query:
-            speak(news())
+            elif 'date' in query:
+                date()
 
-        elif 'tech news' in query:
-            show_me_some_tech_news()
+            elif 'time' in query:
+                time()
 
-        elif 'tech video' in query:
-            show_me_some_tech_videos()
+            elif 'download video' in query:
+                download_yt_video(1)
 
-        elif 'game' in query:
-            play_games(1)
+            elif 'tell me a news' in query:
+                speak(news())
 
-        elif 'picture' in query or 'photo' in query:
-            click_pic(1)
-        
-        elif 'covid' in query :
-            covid_cases(query)
-        
-        elif 'internet speed' in query or 'internet speed check' in query :
-            speed_test(1)
+            elif 'tech news' in query:
+                show_me_some_tech_news()
 
-        elif 'day' in query  in query :
-            tellDay()
-            
+            elif 'tech video' in query:
+                show_me_some_tech_videos()
+
+            elif 'game' in query:
+                play_games(1)
+
+            elif 'picture' in query or 'photo' in query:
+                click_pic(1)
+
+            elif 'covid' in query:
+                covid_cases(query)
+
+            elif 'internet speed' in query or 'internet speed check' in query:
+                speed_test(1)
+
+            elif 'day' in query in query:
+                tellDay()
+
+            elif "bye" in query:
+                speak("GoodBye. Have a nice day!")
+                exit()
