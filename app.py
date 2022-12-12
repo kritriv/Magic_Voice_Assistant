@@ -5,8 +5,6 @@ import playsound
 import speech_recognition as sr
 import os
 
-import wikipedia
-import webbrowser
 
 # ========= Services Module Import =====
 from Services.Speech_control.speech_control import speak
@@ -29,7 +27,7 @@ from Features.Youtube.open_youtube import open_youtube
 from Features.Wikipedia.Wikipedia_search import wikipedia_search
 
 if __name__ == "__main__":
-    # greet()
+    greet()
     while True:
         if 1:
             query = recognze().lower()
@@ -86,6 +84,6 @@ if __name__ == "__main__":
             elif 'day' in query in query:
                 tellDay()
 
-            elif "bye" in query:
-                speak("GoodBye. Have a nice day!")
+            elif "terminate" in query:
+                speak("I am terminating myself, Have a nice day!")
                 exit()
