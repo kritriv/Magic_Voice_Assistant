@@ -55,8 +55,8 @@ UI = Ui_MainWindow()
 
 # ================================ MEMORY ===========================================================================================================
 
-GREETINGS = ["hello jarvis", "jarvis", "wake up jarvis", "you there jarvis", "time to work jarvis", "hey jarvis",
-             "ok jarvis", "are you there"]
+GREETINGS = ["hello Magic", "Magic", "wake up Magic", "you there Magic", "time to work Magic", "hey Magic",
+             "ok Magic", "are you there"]
 GREETINGS_RES = ["always there for you sir", "i am ready sir",
                  "your wish my command", "how can i help you sir?", "i am online and ready sir"]
 
