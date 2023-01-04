@@ -4,7 +4,6 @@ from time import ctime
 import playsound
 import speech_recognition as sr
 import os
-
 import sys
 import random
 
@@ -85,14 +84,14 @@ class LandingThread(QThread):
         # pass
         speak("I am Magic, Your Assistent to use this Application.")
         speak("I am developed by, Vishal Saraiwal") 
-        time.sleep(0.5)
+        # time.sleep(0.5)
         speak("I will be assisting you in few tasks like,")
         speak("doing google search")
-        time.sleep(0.2)
+        # time.sleep(0.2)
         speak("opening any software")
-        time.sleep(0.2)
+        # time.sleep(0.2)
         speak("and a lot more.")
-        time.sleep(0.5)
+        # time.sleep(0.5)
 
 # This is the main thread
 class AboutThread(QThread):
@@ -105,14 +104,14 @@ class AboutThread(QThread):
     def aboutFunction(self):
         speak("I am Magic, Your Assistent to use this Application.")
         speak("I am developed by, Vishal Saraiwal") 
-        time.sleep(0.5)
+        # time.sleep(0.5)
         speak("I will be assisting you in few tasks like,")
         speak("doing google search")
-        time.sleep(0.2)
+        # time.sleep(0.2)
         speak("opening any software")
-        time.sleep(0.2)
+        # time.sleep(0.2)
         speak("and a lot more.")
-        time.sleep(0.5)
+        # time.sleep(0.5)
 
 
 LandingStartExecution = LandingThread()
